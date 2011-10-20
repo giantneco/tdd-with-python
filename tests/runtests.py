@@ -57,5 +57,10 @@ class AirConditionarTest(TestCase):
         ac.set_heater()
         self.assert_(ac.is_light_lamp())
 
+    def testHeaterWith21(self):
+        ac = AirConditionar(21)
+        ac.set_heater()
+        self.assert_(not ac.is_light_lamp())
+
 if __name__ == '__main__':
     unittest.main()
