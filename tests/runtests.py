@@ -27,8 +27,8 @@ class AirConditionarTest(TestCase):
         ac = AirConditionar(28)
         self.assert_(ac.is_light_lamp())
 
-    def testCoolerWith27(self):
-        ac = AirConditionar(27)
+    def testCoolerWith29(self):
+        ac = AirConditionar(29)
         self.assert_(not ac.is_light_lamp())
 
 if __name__ == '__main__':

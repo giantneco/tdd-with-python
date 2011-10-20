@@ -11,7 +11,7 @@ class AirConditionar():
     """AirConditonar Class"""
 
     def __init__(self, thermo):
-        self.thermo = 15
+        self.thermo = thermo
         self.is_cooler_ = True
         pass
 
@@ -23,4 +23,4 @@ class AirConditionar():
         return self.is_cooler_
 
     def is_light_lamp(self):
-        return True
+        return self.thermo < 29
