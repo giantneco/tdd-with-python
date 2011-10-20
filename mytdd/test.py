@@ -6,3 +6,21 @@
 def succ(arg):
     """succeeded of interger"""
     return arg + 1
+
+class AirConditionar():
+    """AirConditonar Class"""
+
+    def __init__(self, thermo):
+        self.thermo = 15
+        self.is_cooler_ = True
+        pass
+
+    def set_thermo(self, thermo):
+        """ set thermo to AirConditonar """
+        self.thermo = thermo
+
+    def is_cooler(self):
+        return self.is_cooler_
+
+    def is_light_lamp(self):
+        return True
