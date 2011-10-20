@@ -45,5 +45,13 @@ class AirConditionarTest(TestCase):
         ac.set_heater()
         self.assert_(not ac.is_cooler())
 
+    def testToggleCoolerHeater(self):
+        ac = AirConditionar(35)
+        ac.set_heater()
+        self.assert_(not ac.is_cooler())
+        ac.set_cooler()
+        self.assert_(ac.is_cooler())
+        
+
 if __name__ == '__main__':
     unittest.main()
