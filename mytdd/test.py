@@ -20,7 +20,7 @@ class AirConditionar():
         self.thermo = thermo
 
     def is_cooler(self):
-        return self.is_cooler_
+        return self.is_cooler
 
     def is_light_lamp(self):
         return self.thermo < 29

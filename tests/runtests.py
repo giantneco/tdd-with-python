@@ -31,5 +31,16 @@ class AirConditionarTest(TestCase):
         ac = AirConditionar(29)
         self.assert_(not ac.is_light_lamp())
 
+    def testCoolerWith35(self):
+        ac = AirConditionar(35)
+        self.assert_(not ac.is_light_lamp())
+
+    def testSetCooler(self):
+        ac = AirConditionar(35)
+        ac.set_cooler()
+        self.assert_(ac.is_cooler())
+
+
+
 if __name__ == '__main__':
     unittest.main()
