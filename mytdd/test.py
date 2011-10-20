@@ -26,7 +26,7 @@ class AirConditionar():
         if self.is_cooler_:
             return self.thermo >= 28
         else:
-            return self.thermo == 20
+            return self.thermo <= 20
 
     def set_cooler(self):
         self.is_cooler_ = True
