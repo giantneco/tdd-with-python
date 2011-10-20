@@ -26,7 +26,7 @@ class AirConditionar():
         return self.thermo < 29
 
     def set_cooler(self):
-        pass
+        self.is_cooler_ = True
 
     def set_heater(self):
         self.is_cooler_ = False
